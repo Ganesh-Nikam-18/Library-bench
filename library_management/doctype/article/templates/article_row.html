@@ -1,0 +1,15 @@
+<div class="book-detail d-flex align-items-start mb-5 pb-3 border-bottom">
+    <!-- Article Image -->
+    <div class="book-image me-4">
+        <img src="{{ doc.image }}" alt="{{ doc.name }}" class="img-fluid rounded shadow-sm" style="width: 150px; height: auto;">
+    </div>
+
+    <!-- Article Details -->
+    <div class="article-info">
+        <h2 class="book-title mb-3">
+            <a href="{{ doc.route }}" class="text-decoration-none text-dark">{{ doc.name }}</a>
+        </h2>
+        <p class="author text-muted mb-3">By {{ doc.author }}</p>
+        <a href="{{ doc.route }}" class="btn btn-primary btn-sm">Read More</a>
+    </div>
+</div>

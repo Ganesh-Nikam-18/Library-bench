@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 15:15:21.937142",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "degree",
+  "certification"
+ ],
+ "fields": [
+  {
+   "fieldname": "degree",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "degree"
+  },
+  {
+   "fieldname": "certification",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "certification"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-27 16:09:19.896301",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "childDoc",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

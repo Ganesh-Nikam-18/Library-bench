@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-06 10:20:19.815351",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "library_membership",
+  "full_name",
+  "validate_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "library_membership",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Library Membership",
+   "options": "Library Membership",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "library_membership.to_date",
+   "fieldname": "validate_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Validate Date "
+  },
+  {
+   "fetch_from": "library_membership.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full name "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-06 10:50:28.763140",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Membership Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

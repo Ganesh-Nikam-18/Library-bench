@@ -1,0 +1,34 @@
+<div class="container my-5">
+    <div class="row">
+        <!-- Main wrapper for image and details -->
+        <div class="d-flex align-items-start">
+            <!-- Image on the left -->
+            <div class="col-md-4 text-center">
+                <img src="{{ image }}" alt="{{ title }}" class="img-fluid rounded shadow-sm">
+            </div>
+
+            <!-- Article details on the right -->
+            <div class="col-md-8 ms-4"> <!-- Added margin-start for spacing -->
+                <h1 class="mb-3">{{ title }}</h1>
+                <p class="text-muted"><strong>By:</strong> {{ author }}</p>
+
+                <div class="status mb-3">
+                    {% if status == 'Available' %}
+                        <span class="badge bg-success px-3 py-2">Available</span>
+                    {% elif status == 'Issued' %}
+                        <span class="badge bg-danger px-3 py-2">Issued</span>
+                    {% endif %}
+                </div>
+
+                <div class="article-meta mb-3">
+                    <p><strong>Publisher:</strong> {{ publisher }}</p>
+                    <p><strong>ISBN:</strong> {{ isbn }}</p>
+                </div>
+
+                <div class="description mt-4">
+                    <p>{{ description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

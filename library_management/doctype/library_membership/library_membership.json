@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LMS.#####",
+ "creation": "2024-11-25 15:28:38.636847",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "library_member",
+  "full_name",
+  "status",
+  "column_break_asfl",
+  "from_date",
+  "to_date",
+  "paid",
+  "amended_from",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "library_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Library Member",
+   "options": "Library Member",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "library_member.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "options": "Library Member",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_asfl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "label": "Paid"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Membership",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nOff"
+  },
+  {
+   "fetch_from": "library_member.phone",
+   "fetch_if_empty": 1,
+   "fieldname": "phone",
+   "fieldtype": "Read Only",
+   "label": "Phone"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-12 16:29:43.159740",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Membership",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "librarian",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "library member",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

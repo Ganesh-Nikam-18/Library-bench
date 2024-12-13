@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 15:13:28.073706",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yxrw",
+  "name1",
+  "column_break_twpe",
+  "status",
+  "section_break_dept",
+  "child"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "section_break_yxrw",
+   "fieldtype": "Section Break",
+   "options": "Working\nLearning"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Working\nLearning"
+  },
+  {
+   "fieldname": "child",
+   "fieldtype": "Table",
+   "label": "child",
+   "options": "childDoc"
+  },
+  {
+   "fieldname": "column_break_twpe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dept",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-27 16:06:39.829466",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "singleDoc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

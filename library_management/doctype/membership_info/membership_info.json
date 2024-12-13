@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-06 10:35:35.100054",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fetch_membership_data",
+  "membership_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "fetch_membership_data",
+   "fieldtype": "Button",
+   "label": "Fetch Membership Data "
+  },
+  {
+   "fieldname": "membership_details",
+   "fieldtype": "Table",
+   "label": "Membership Details ",
+   "options": "Membership Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-12-06 10:39:28.973547",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Membership Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
